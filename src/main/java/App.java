@@ -15,7 +15,7 @@ public class App {
             return new ModelAndView(model, "index.hbs");
         },new HandlebarsTemplateEngine());
 
-        post("/posts/new", (request, response) -> { //URL to make new post on POST route
+        post("/Heroes/new", (request, response) -> { //URL to make new post on POST route
             Map<String, Object> model = new HashMap<String, Object>();
             String data = request.queryParams("data");
             HeroSQ newHero = new HeroSQ(data);
