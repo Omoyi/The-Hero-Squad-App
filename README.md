@@ -14,4 +14,7 @@ like or fan. It is build using java.
 In case you want to  install this app you can just clone it.
 But first make sure you install Java and gradle
 
-##
+## Contact
+
+***urakhel7@gmail.com***
+
