@@ -9,6 +9,8 @@ like or fan. It is build using java.
 
 **Uwimana Rachel**
 
+## BEHAVIOR DRIVEN DEVELOPMENT
+
 ## Setup/Installation Requirements
 
 In case you want to  install this app you can just clone it.
