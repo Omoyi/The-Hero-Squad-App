@@ -18,6 +18,6 @@ But first make sure you install Java and gradle
 
 ***urakhel7@gmail.com***
 
-## Coypright License
+## License
 
 MIT license copyright 2019 **Rachel**
