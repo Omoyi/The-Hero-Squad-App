@@ -36,6 +36,10 @@ body {
 #text {
   margin-top: -45px;
   text-align: center;
+  color: white;
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 30px;
 }
 
 #text a {
@@ -63,20 +67,18 @@ nav {
    overflow: hidden;
 }
 
-a {
-  float: left;
-   border-right: 1px solid #bbb;
-   padding: 14px 16px;
-}
-
-a {
+span {
   display: block;
   color: maroon;
   text-align: center;
   font-weight: 200;
-  text-decoration: none;
+  padding-right: 30px;
+  float: left;
+  border-right: 1px solid #bbb;
+  padding: 16px 20px;
  }
 
 .active:hover {
-    background-color: green;
+    background-color: black;
+    text-decoration: none;
 }
