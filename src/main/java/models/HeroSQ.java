@@ -1,13 +1,25 @@
 package models;
+import java.util.ArrayList;
+import java.util.List;
 
 public class HeroSQ {
-  private String data;
+    private String heroName;
+    private int heroAge;
+    private  String weakPoint;
+    private String knownPower;
+    private static List<HeroSQ> instances = new ArrayList<HeroSQ>();
+    private int Id;
 
     public HeroSQ(String data){
-        this.data = data;
+
+        this.heroName = data;
+        this.heroAge = heroAge;
+        this.weakPoint = weakPoint;
+        this.knownPower = knownPower;
+
     }
 
-    public String getData() {
-        return data;
+    public String getHeroName() {
+        return heroName;
     }
 }
