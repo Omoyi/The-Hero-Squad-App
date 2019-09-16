@@ -56,3 +56,27 @@ body {
    margin-right: auto;
    margin-top: 20px;
 }
+
+nav {
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+}
+
+a {
+  float: left;
+   border-right: 1px solid #bbb;
+   padding: 14px 16px;
+}
+
+a {
+  display: block;
+  color: maroon;
+  text-align: center;
+  font-weight: 200;
+  text-decoration: none;
+ }
+
+.active:hover {
+    background-color: green;
+}
