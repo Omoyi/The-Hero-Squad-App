@@ -1,16 +1,17 @@
 #shape {
-  stroke-width: 6px;
+  stroke-width: 4px;
   fill: transparent;
   stroke: #009FFD;
-  stroke-dasharray: 85 400;
-  stroke-dashoffset: -220;
+   stroke-dasharray: 105 400;
+  stroke-dashoffset: -20;
   transition: 1s all ease;
 }
 
 .svg-wrapper {
+
   margin-top: 0;
   position: relative;
-  width: 250px;
+  width: 300px;
   height: 40px;
   display: inline-block;
   border-radius: 3px;
@@ -20,14 +21,16 @@
 
 .spot {
   position: absolute;
-  width: 600px;
+  width: 1500px;
   height: 100%;
   top: 0;
   left: 0;
+  width: 900px;
+  padding-left: 2000px;
 }
 
 #text {
-  margin-top: -35px;
+  margin-top: -45px;
   text-align: center;
 }
 
@@ -40,7 +43,6 @@
 
 .svg-wrapper:hover #shape {
   stroke-dasharray: 50 0;
-  stroke-width: 10px;
-  stroke-dashoffset: 0;
+  stroke-dashoffset: 10;
   stroke: #06D6A0;
 }

@@ -15,11 +15,11 @@ public class App {
             return new ModelAndView(model, "index.hbs");
         },new HandlebarsTemplateEngine());
 
-        post("/Heroes/new", (request, response) -> { //URL to make new post on POST route
+        post("/heroes/new", (request, response) -> { //URL to make new post on POST route
             Map<String, Object> model = new HashMap<String, Object>();
             String data = request.queryParams("data");
             HeroSQ newHero = new HeroSQ(data);
-            return new ModelAndView(model, "success.hbs");
+            return new ModelAndView(model, "execution.hbs");
         }, new HandlebarsTemplateEngine());
     }
 }
