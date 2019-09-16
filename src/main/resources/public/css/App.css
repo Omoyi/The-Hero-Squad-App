@@ -34,7 +34,7 @@ body {
 }
 
 #text {
-  margin-top: -36px;
+  margin-top: -46px;
   text-align: center;
   color: white;
     text-decoration: none;
@@ -52,6 +52,7 @@ body {
 a {
    border-right: 1px solid #bbb;
    padding-right: 20px;
+   font-family: 'Alegreya Sans SC', sans-serif;
 }
 
 .svg-wrapper:hover #shape {
@@ -90,6 +91,7 @@ span {
 
 .active:hover {
     background-color: grey;
+    color: white;
     text-decoration: none;
 }
 
@@ -98,7 +100,7 @@ span {
       box-shadow: 2px 2px 15px 3px rgba(12,32,56);;
     }
      5%{
-        box-shadow: 2px 2px 16px 3px red;
+        box-shadow: 2px 2px 16px 3px navy;
     }
      10%{
       box-shadow: 2px 2px 17px 3px Aquamarine;
