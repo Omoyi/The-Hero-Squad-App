@@ -16,7 +16,7 @@ body {
   margin-top: 0;
   position: relative;
   width: 300px;
-  height: 40px;
+  height: 50px;
   display: inline-block;
   border-radius: 3px;
   margin-left: 5px;
@@ -30,11 +30,11 @@ body {
   top: 0;
   left: 0;
   width: 900px;
-  padding-left: 2000px;
+  padding-left: 1500px;
 }
 
 #text {
-  margin-top: -45px;
+  margin-top: -36px;
   text-align: center;
   color: white;
     text-decoration: none;
@@ -47,6 +47,11 @@ body {
   text-decoration: none;
   font-weight: 100;
   font-size: 30px;
+}
+
+a {
+   border-right: 1px solid #bbb;
+   padding-right: 20px;
 }
 
 .svg-wrapper:hover #shape {
@@ -65,20 +70,91 @@ nav {
    margin: 0;
    padding: 0;
    overflow: hidden;
+   width: 700px;
+   list-style-type: none;
+   animation: animate 40s linear;
+   box-shadow: 2px 2px 15px 0px rgba(12,32,56);;
+   border-style: none;
 }
 
 span {
   display: block;
-  color: maroon;
+  font-size: 20px;
+  color: navy;
   text-align: center;
   font-weight: 200;
   padding-right: 30px;
   float: left;
-  border-right: 1px solid #bbb;
-  padding: 16px 20px;
+  padding: 30px;
  }
 
 .active:hover {
-    background-color: black;
+    background-color: grey;
     text-decoration: none;
+}
+
+@keyframes animate{
+    0%{
+      box-shadow: 2px 2px 15px 3px rgba(12,32,56);;
+    }
+     5%{
+        box-shadow: 2px 2px 16px 3px red;
+    }
+     10%{
+      box-shadow: 2px 2px 17px 3px Aquamarine;
+    }
+     15%{
+       box-shadow: 2px 2px 18px 3px seashell;
+    }
+     20%{
+       box-shadow: 2px 2px 19px 3px maroon;
+    }
+    25%{
+      box-shadow: 2px 2px 19px 3px green;
+    }
+     30%{
+      box-shadow: 2px 2px 18px 3px darkorange;
+    }
+     35%{
+       box-shadow: 2px 2px 27px 3px deeppink;
+    }
+     40%{
+       box-shadow: 2x 2px 16px 3px Snow;
+    }
+     45%{
+       box-shadow: 2px 2px 15px 3px IndianRed;
+    }
+    50%{
+       box-shadow: 2px 2px 16px 3px Cornsilk;
+
+     55%{
+       box-shadow: 2px 2px 17px 3px GreenYellow;
+    }
+     60%{
+       box-shadow: 2px 2px 18px 3px Teal;
+    } 65%{
+       box-shadow: 2px 2px 19px 3px NavajoWhite;
+    }
+     70%{
+       box-shadow: 2px2px 18px 3px YellowGreen;
+    }
+     75%{
+       box-shadow: 2px 2px 17px 3px DarkTurquoise;
+    }
+     80%{
+      box-shadow: 2px 2px 16px 3px DarkSlateGray;
+    }
+     85%{
+       box-shadow: 2px2px 15px 3px Plum;
+    }
+     90%{
+       box-shadow: 2px 2px 14px 3px ForestGreen;
+    }
+     95%{
+       box-shadow: 2px 2px 13px 3px Purple;
+    }
+       100%{
+       box-shadow: 2px 2px 12px 3px DarkSlateBlue	;
+}
+
 }
