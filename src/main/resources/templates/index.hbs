@@ -1,4 +1,5 @@
 {{#partial "content"}}
+<body>
     <br>
     <br>
     <br>
@@ -29,7 +30,7 @@
     <br>
     <br>
     <br>
-    <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i.ytimg.com/vi/Cl1dyX7esBE/maxresdefault.jpg);
+   <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i.ytimg.com/vi/Cl1dyX7esBE/maxresdefault.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -38,25 +39,28 @@
     top: 50%;
     left: 50%;
     height: 1000px;
-    width: 100%;
     transform: translate(-50%, -50%);
      color: white;">
 
-    <div><br><br><br><br><br>
-        <h1 style="font-size:80px; text-align: center;">THE HERO SQUAD APP</h1><br><br><br>
-        <h1 style="text-align: center;">Hi there, I am Rachel</h1><br><br><br>
-    </div>
+      <div><br><br><br><br><br>
+          <h1 style="font-size:80px; text-align: center;">THE HERO SQUAD APP</h1><br><br><br>
+          <h1 style="text-align: center;">Hi there, I am Rachel</h1><br><br><br>
+      </div>
 
-    <div class="svg-wrapper">
-        <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
-            <rect id="shape" height="40" width="150" />
-            <div id="text">
-                <a><span class="spot"></span>Welcome</a>
-            </div>
-        </svg>
-    </div>
+      <div class="svg-wrapper">
+          <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+              <rect id="shape" height="40" width="150" />
+              <div id="text">
+                  <a><span class="spot"></span>Welcome</a>
+              </div>
+          </svg>
+      </div>
   </div>
-
+       <div class="buttons">
+            <a href="/squads" class="btn btn-info btn-lg">View Squad List</a>
+            <a href="/squads/new" class="btn btn-info btn-lg">Add a New Squad</a>
+       </div>
+</body>
 {{/partial}}
 
 {{> layout.hbs}}
