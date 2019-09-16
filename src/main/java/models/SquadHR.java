@@ -15,7 +15,7 @@ public class SquadHR {
     }
 
     public String getSqName() {
-        return sqName;yyyyyyyyyyyyyyy
+        return sqName;
     }
 
     public String getCause() {
