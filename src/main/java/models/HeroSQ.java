@@ -1,4 +1,5 @@
 package models;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,17 +8,36 @@ public class HeroSQ {
     private int heroAge;
     private  String weakPoint;
     private String knownPower;
-    private static List<HeroSQ> instances = new ArrayList<HeroSQ>();
+    private static List<HeroSQ> instances = new ArrayList<>();
+    private boolean publish;
+    private LocalDateTime createdAt;
     private int Id;
 
-    public HeroSQ(String data, int heroAge, String weakPoint, String knownPower){
+    public HeroSQ(String heroName, int heroAge, String weakPoint, String knownPower){
 
-        this.heroName = data;
+        this.heroName = heroName;
         this.heroAge = heroAge;
         this.weakPoint = weakPoint;
         this.knownPower = knownPower;
+        this.publish = false;
+        this.createdAt= LocalDateTime.now();
         instances.add(this);
-        Id = instances.size();
+        this.Id= instances.size();
+    }
+    public static ArrayList<HeroSQ> getAll() {
+        return (ArrayList<HeroSQ>) instances;
+    }
+
+    public static void clearAllPosts(){
+        instances.clear();
+    }
+
+    public boolean getPublish(){
+        return this.publish;
+    }
+
+    public LocalDateTime getCreatedAt() {
+      return createdAt;
     }
 
     public String getHeroName() {
