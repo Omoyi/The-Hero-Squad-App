@@ -15,12 +15,6 @@ body {
   color: white;
 }
 
-
-body:hover {
-Filter: brightness (.6);
-}
-
-
 #shape {
   stroke-width: 4px;
   fill: transparent;

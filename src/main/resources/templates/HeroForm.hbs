@@ -2,8 +2,9 @@
 
 <body>
 
-   <h1>THE HERO SQUAD</h1>
-
+   <h1>CREATE A HERO</h1>
+   <hr>
+   <br><br><br><br><br><br><br>
    <form action="/heroes/new" method="POST">
        <input type="text" name="name" class="question" id="name"  required autocomplete="off"/>
        <label for="nme"><span class="span">Heroes name</span></label><br><br><br>
@@ -13,16 +14,14 @@
        <label for="strength"><span class="span">Describe a known strength?</span></label><br><br>
        <input type="text" name="strength" class="question" id="strength"  required autocomplete="off"/>
        <label for="strength"><span class="span">What's their weak point?</span></label><br><br><br>
-
-       <input type="submit" value="ADD A HERO"/>
-    </form>
-
+    </form><br>
+    <button type="submit"><img src="/images/crown.jpg"><button/>
     <style>
 
     body {
-      background-image: url(https://image.freepik.com/foto-gratis/cierrese-encima-silueta-hormiga-que-camina-arbol-fondo-puesta-sol_30478-896.jpg);
+      background-image: url(https://www.gecopywriter.com/wp-content/uploads/2016/01/ants.jpg);
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: cover;
     }
 
     input,span,label {
@@ -31,16 +30,26 @@
          margin: 10px;
          padding: 5px;
          border: none;
+         background-color: unset;
          font-size: 22px;
-         margin-left: auto;
-         margin-right: auto;
+         color: black;
     }
 
+    button {
+       border-radius: 5px;
+       font-family: lora;
+       color: black;font-size: 19px;
+       margin-left: 490px;
 
-    input:focus {
+    }
+
+    input:focus, button:focus {
          outline: 0;
     }
 
+    img {
+       width: 90px;
+    }
 
     input.question,{
           font-size: 48px;
@@ -49,7 +58,7 @@
           margin: 0;
           border: none;
           width: 100%;
-          background: rgba(0, 0, 0, 0);
+<!--          background: rgba(0, 0, 0, 0);-->
           transition: padding-top 0.2s ease, margin-top 0.2s ease;
           overflow-x: hidden;
     }
@@ -61,8 +70,8 @@
          white-space: nowrap;
          padding: 0;
          margin: 0;
-         width: 10%;
-         border-top: 1px solid red;
+         width: 50%;
+         border-top: 2px solid red;
          -webkit-transition: width 0.4s ease;
          transition: width 0.4s ease;
          height: 0px;
@@ -80,12 +89,19 @@
     input.question:focus + label > span, input.question:valid + label > span {
          top: -100px;
          font-size: 22px;
-         color: #333;
+         color: palevioletred;
+    }
+
+    h1 {
+      text-align: center;
     }
 
     form {
-       margin-left: 800px;
-       margin-right: 800px;
+    width: 50%;
+       margin-left: 400px;
+       background-color: white;
+       opacity: 0.8;
+       border-radius: 25px;
        text-align: center;
     }
 
