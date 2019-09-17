@@ -1,0 +1,22 @@
+{{#partial "content"}}
+
+    <div class="well" style="opacity:0.8;width:50%">
+        <p>name:</p>
+
+        <p>{{ squad.SQName }}</p>
+        <p>Size:</p>
+
+        <p>{{ squad.maxSize}}</p>
+        <p>special cause</p>
+
+        <p>{{ squad.cause}}</p>
+        <a href="/squads/{{squad.id}}/update">EDIT</a><br>
+        <a href="/squads/{{squad.id}}/delete">DELETE</a>
+        </p>
+    </div>
+
+
+    </body>
+{{/partial}}
+
+{{> layout.hbs}}

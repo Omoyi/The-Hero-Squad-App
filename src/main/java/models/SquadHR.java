@@ -35,6 +35,8 @@ public class SquadHR {
 
     public static ArrayList<SquadHR>getAll() { return instances; }
 
+    public static void clear() { instances.clear(); }
+
     public void addHero(HeroSQ hero){ heroesClass.add(hero); }
 
     public List<HeroSQ> getHeroesClass() { return heroesClass; }
@@ -43,6 +45,14 @@ public class SquadHR {
         this.sqName =name;
         this.maxSize= maxSize;
 
+    }
+
+    public static SquadHR find(int id) {
+        try {
+            return instances.get(id - 1);
+        } catch (IndexOutOfBoundsException exception) {
+            return null;
+        }
     }
 
     public void deleteSquad() {
