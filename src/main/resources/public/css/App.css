@@ -2,7 +2,22 @@ body {
   width: 100%;
   height: 100%;
   margin-bottom: 200px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i.ytimg.com/vi/Cl1dyX7esBE/maxresdefault.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+  position: relative;
+  top: 70%;
+  left: 50%;
+  height: 1000px;
+  transform: translate(-50%, -50%);
+  color: white;
 }
+
+
+body:hover Filter: brightness (.6)
+
 
 #shape {
   stroke-width: 4px;
@@ -39,22 +54,24 @@ body {
   margin-top: -46px;
   text-align: center;
   color: white;
+  background-color: transparent;
     text-decoration: none;
     font-weight: 100;
     font-size: 30px;
 }
 
-#text li {
+#text a {
   color: white;
   text-decoration: none;
   font-weight: 100;
   font-size: 30px;
 }
 
-li {
+a {
    border-right: 1px solid #bbb;
    padding-right: 20px;
    font-family: 'Alegreya Sans SC', sans-serif;
+   text-decoration: none;
 }
 
 .svg-wrapper:hover #shape {
@@ -78,24 +95,17 @@ nav {
    animation: animate 40s linear;
    box-shadow: 2px 2px 15px 0px rgba(12,32,56);;
    border-style: none;
-
+   font-size: 20px;
+   color: rgba(12,32,56);
+   font-weight: 400;
+   text-decoration: none;
 }
 
-a {
-  display: block;
-  font-size: 20px;
-  color: navy;
-  text-align: center;
-  font-weight: 200;
-  padding-right: 30px;
-  float: left;
-  padding: 30px;
- }
+/
 
 .active:hover {
     background-color: grey;
     color: white;
-    text-decoration: none;
 }
 
 @keyframes animate{
