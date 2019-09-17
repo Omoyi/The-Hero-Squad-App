@@ -1,22 +1,28 @@
 {{#partial "content"}}
-<div class="parent">
 
-<h1>THE HERO SQUAD</h1>
+<body>
 
-<form action="/heroes/new" method="POST">
-    <label for="nme"><span class="span">Heroes name</span></label>
-    <input type="text" name="name" class="question" id="name"  required autocomplete="off"/><br><br><br>
-    <label for="age"><span class="span">What's his/her age?</span></label><br><br>
-    <input type="number" name="age" class="question" id="age"  required autocomplete="off"/>
-    <label for="strength"><span class="span">Describe a known strength?</span></label><br><br>
-    <input type="text" name="strength" class="question" id="strength"  required autocomplete="off"/>
-    <label for="strength"><span class="span">What's their weak point?</span></label><br><br><br>
-    <input type="text" name="strength" class="question" id="strength"  required autocomplete="off"/>
+   <h1>THE HERO SQUAD</h1>
 
-    <input type="submit" value="ADD A HERO"/>
-</form>
+   <form action="/heroes/new" method="POST">
+       <input type="text" name="name" class="question" id="name"  required autocomplete="off"/>
+       <label for="nme"><span class="span">Heroes name</span></label><br><br><br>
+       <input type="number" name="age" class="question" id="age"  required autocomplete="off"/>
+       <label for="age"><span class="span">What's his/her age?</span></label><br><br>
+       <input type="text" name="strength" class="question" id="strength"  required autocomplete="off"/>
+       <label for="strength"><span class="span">Describe a known strength?</span></label><br><br>
+       <input type="text" name="strength" class="question" id="strength"  required autocomplete="off"/>
+       <label for="strength"><span class="span">What's their weak point?</span></label><br><br><br>
 
-<style>
+       <input type="submit" value="ADD A HERO"/>
+    </form>
+
+    <style>
+
+    body {
+
+    }
+
     input,span,label {
          font-family: 'Ubuntu', sans-serif;
          display: block;
@@ -24,6 +30,8 @@
          padding: 5px;
          border: none;
          font-size: 22px;
+         margin-left: auto;
+         margin-right: auto;
     }
 
 
@@ -73,63 +81,14 @@
          color: #333;
     }
 
-<!--    .parent {-->
-<!--  width: 400px;-->
-<!--  height: 300px;-->
-<!--}-->
-
-<!--.child {-->
-<!--  width: 1000px;-->
-<!--  height: 1000px;-->
-<!--  background-color: black; /* fallback color */-->
-<!--  background-image: url("https://img.haikudeck.com/mg/DAEF916D-A7C8-4FE9-B1CE-F635F30AB9F8.jpg");-->
-<!--  background-position: center;-->
-<!--  background-size: contain;-->
-<!--}-->
-
-<!--.parent:hover .child,-->
-<!--.parent:focus .child {-->
-<!--  transform: scale(1.2);-->
-<!--}-->
-
-<!--.child::before {-->
-<!--  content: "";-->
-<!--  display: none;-->
-<!--  height: 1000px;-->
-<!--  width: 1000px;-->
-<!--  position: absolute;-->
-<!--  top: 0;-->
-<!--  left: 0;-->
-<!--  background-color: rgba(52, 73, 94, 0.75);-->
-<!--}-->
-
-<!--.parent:hover .child:before,-->
-<!--.parent:focus .child:before {-->
-<!--  display: block;-->
-<!--}-->
-
-<!--.parent:hover span,-->
-<!--.parent:focus span {-->
-<!--  display: block;-->
-<!--}-->
-
-<!--span {-->
-<!--  color: white; /* Good thing we set a fallback color! */-->
-<!--  font-family: sans-serif;-->
-<!--  padding: 25%;-->
-<!--  position: absolute;-->
-<!--}-->
-
-<!--transition: all .5s;-->
-
     form {
-       margin-left: auto;
-       margin-right: auto;
+       margin-left: 800px;
+       margin-right: 800px;
        text-align: center;
     }
 
-</style>
-
+   </style>
+</body>
 {{/partial}}
 
 {{> layout.hbs}}
