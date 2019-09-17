@@ -1,7 +1,7 @@
 body {
   width: 100%;
   height: 100%;
-  margin-bottom: 200px;
+  margin-bottom: 250px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i.ytimg.com/vi/Cl1dyX7esBE/maxresdefault.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -16,7 +16,9 @@ body {
 }
 
 
-body:hover Filter: brightness (.6)
+body:hover {
+Filter: brightness (.6);
+}
 
 
 #shape {
@@ -54,7 +56,6 @@ body:hover Filter: brightness (.6)
   margin-top: -46px;
   text-align: center;
   color: white;
-  background-color: transparent;
     text-decoration: none;
     font-weight: 100;
     font-size: 30px;
@@ -71,7 +72,6 @@ a {
    border-right: 1px solid #bbb;
    padding-right: 20px;
    font-family: 'Alegreya Sans SC', sans-serif;
-   text-decoration: none;
 }
 
 .svg-wrapper:hover #shape {
@@ -87,7 +87,7 @@ a {
 }
 
 nav {
-   margin: 0;
+   margin-top: 20px;
    padding: 0;
    overflow: hidden;
    width: 700px;
@@ -100,8 +100,6 @@ nav {
    font-weight: 400;
    text-decoration: none;
 }
-
-/
 
 .active:hover {
     background-color: grey;
@@ -174,7 +172,7 @@ nav {
 
 }
 
-input,.span,label {
+input,span,label {
   font-family: 'Ubuntu', sans-serif;
   display: block;
   margin: 10px;
