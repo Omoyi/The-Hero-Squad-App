@@ -1,5 +1,6 @@
-body {
+body{
   width: 100%;
+  margin-bottom: 300px;
 }
 
 #shape {
@@ -78,7 +79,7 @@ nav {
    border-style: none;
 }
 
-span {
+li {
   display: block;
   font-size: 20px;
   color: navy;
@@ -161,7 +162,7 @@ span {
 
 }
 
-input,span,label {
+input.span,label {
   font-family: 'Ubuntu', sans-serif;
   display: block;
   margin: 10px;
