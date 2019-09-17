@@ -27,7 +27,14 @@ public class App {
 //            HeroSQ newHero = new HeroSQ(
 //                    weakPoint,heroAge,knownPower);
 //            model.put("hero", newHero);
-            return new ModelAndView(model, "execution.hbs");
+            return new ModelAndView(model, "HeroForm.hbs");
         }, new HandlebarsTemplateEngine());
+
+        get("/heroes/new", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            return new ModelAndView(model, "HeroForm.hbs");
+        }, new HandlebarsTemplateEngine());
+
+        }
     }
-}
+
