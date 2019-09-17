@@ -32,7 +32,8 @@ public class HeroSQ {
         instances.clear();
     }
 
-    public boolean getPublish(){
+    public boolean getPublish()
+    {
         return this.publish;
     }
 
@@ -76,18 +77,15 @@ public class HeroSQ {
         }
     }
 
-    public static boolean seeHeroThroughName(String heroName)
-    {
-        boolean Present = false;
-        for (int i =0; i<instances.size(); i++)
-        {
-            if (heroName.equalsIgnoreCase(instances.get(i).heroName) )
-            {
-                Present = true;
-            }
-        }
+    public void update(String name,int age,String specialPower,String weakness) {
+        this.heroName = heroName;
+        this.heroAge = heroAge;
+        this.weakPoint = weakPoint;
+        this.knownPower = knownPower;
+    }
 
-        return Present;
+    public void deleteHero(){
+        instances.remove(Id-1);
     }
 
 }

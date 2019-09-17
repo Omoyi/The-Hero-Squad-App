@@ -13,21 +13,20 @@ public class App {
 
         get("/", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
-//            ArrayList<HeroSQ> posts = HeroSQ.getAll();
-//            model.put("posts", posts)
+            ArrayList<HeroSQ> posts = HeroSQ.getAll();
+            model.put("posts", posts);
             return new ModelAndView(model, "index.hbs");
         },new HandlebarsTemplateEngine());
 
-        post("/heroes/new", (request, response) -> { //URL to make new post on POST route
+        post("/heroes/new", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
-            String data = request.queryParams("data");
-            String weakPoint = request.queryParams("weakPoint");
+            String heroName = request.queryParams("heroName");
+          String weakPoint = request.queryParams("weakPoint");
             int heroAge = Integer.parseInt(request.queryParams("heroAge"));
             String knownPower = request.queryParams("knownPower");
-//            HeroSQ newHero = new HeroSQ(
-//                    weakPoint,heroAge,knownPower);
-//            model.put("hero", newHero);
-            return new ModelAndView(model, "HeroForm.hbs");
+            HeroSQ newHero = new HeroSQ(heroName,heroAge,weakPoint,knownPower);
+            model.put("hero", newHero);
+            return new ModelAndView(model, "execution.hbs");
         }, new HandlebarsTemplateEngine());
 
         get("/heroes/new", (request, response) -> {
